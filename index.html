@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Calorie Calculator</h1>
+        <ul></ul>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="hero-heading">What is this app for?</h1>
+        <p class="hero-heading-body">
+          This is a calorie calculator that will help you to calculate your BMR
+          (Basal Metabolic Rate)
+        </p>
+      </div>
+    </section>
+
+    <section class="user-details">
+      <div class="container">
+        <div class="card">
+          <h1>Calculator</h1>
+          <form>
+            <div class="form-control">
+              <label for="age">Age</label>
+              <input type="number" id="age" />
+            </div>
+            <div class="form-control">
+              <label for="weight">Weight (KG)</label>
+              <input type="number" id="weight" />
+            </div>
+            <div class="form-control">
+              <label for="height">Height (CM)</label>
+              <input type="number" id="height" />
+            </div>
+            <button class="btn btn-primary button-40" id="calculateBmr">
+              Calculate
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section" id="results-section">
+      <div class="container">
+        <h2 class="results-title">Results</h2>
+        <h1 class="results-bmr-label" id="bmr-result">BMR: 2025</h1>
+        <small id="how-calculate-bmr">How did we calculate this figure?</small>
+      </div>
+    </section>
+
+    <section id="bmr-explanation">
+        <div class="modal-container">
+            <h2 class="bmr-explanation-title">How did we calculate this figure?</h2>
+            <p class="bmr-explanation-body">
+            The BMR is the amount of calories your body needs to function
+            properly. It is the amount of calories you need to consume to maintain
+            your current weight. The BMR is calculated using the Mifflin-St Jeor
+            equation.
+            </p>
+            <p class="bmr-explanation-body">
+            The equation is as follows:
+            </p>
+            <p class="bmr-explanation-body">
+            BMR = 10 x weight (kg) + 6.25 x height (cm) - 5 x age (years) + 5
+            </p>
+            <p class="bmr-explanation-body">
+
+            <button class="close-modal-btn" id="close-modal">Close</button>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
